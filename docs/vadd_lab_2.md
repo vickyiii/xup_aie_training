@@ -157,13 +157,7 @@ Steps on adding the host application, page 30 onwards
 
    Add the following libraries, under Libraries (-l)
 
-   `adf_api_xrt`
-
    `xrt_coreutil`
-
-   Add the following path, under search path (-L)
-
-   `${env_var:XILINX_VITIS}/aietools/lib/lnx64.o`
 
    ![](images/vadd_lab/host_domain_cpp_settings_linker_libs.png)
 
@@ -202,10 +196,6 @@ In this section, we are going to run hardware emulation for the entire system
 
 ### Implement for actual hardware
 
-Coming soon
-
-<!--
-
 In this section, we are going to run the vector add in actual hardware
 
 1. In the Explore pane, double-click on `aie_vadd_system.sprj`
@@ -214,13 +204,18 @@ In this section, we are going to run the vector add in actual hardware
 
 1. Select Hardware as the active build configuration
 
+   ![](images/vadd_lab/system_project_hardware_target.png)
+
 1. In the Explore pane, right-click on the `aie_vadd_system` then select *Build Project*
 
    ![](images/vadd_lab/system_build_system.png)
 
    This process takes around 80 minutes.
 
--->
+1. In the Explore pane, right-click on `aie_vadd_system` and then select *Run As > Launch Hardware*
+
+   ![](images/vadd_lab/system_run_hardware.png)
+
 ## Conclusion
 
 In this lab, you used Vitis IDE to include the PL and x86 domains to get a complete system that can run on the VCK5000.
